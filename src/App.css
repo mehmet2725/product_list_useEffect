@@ -1,0 +1,283 @@
+/* Temel ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Başlık */
+.page-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Arama ve kategori filtreleri */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.search-box,
+.category-filter {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.search-input,
+.category-select {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.search-input:focus,
+.category-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.category-select {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* Ürünler */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Kart */
+.product-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Görsel */
+.thumbnail {
+  width: 100%;
+  height: 220px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Bilgi */
+.product-info {
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+  height: 70px;
+  overflow: hidden;
+}
+
+/* Fiyat ve stok */
+.price-stock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.stock {
+  font-size: 0.85rem;
+  background: #e8f0ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #667eea;
+}
+
+/* Kategori etiketi */
+.category-tag {
+  background: #667eea;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+/* Yükleniyor */
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Yükleme butonu */
+.load-more-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.load-more-btn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.load-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.load-more-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Bitti mesajı */
+.no-more {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-box,
+  .category-filter {
+    max-width: 100%;
+  }
+}
+
+body.light {
+  background: #f9f9f9;
+  color: #333;
+}
+
+body.dark {
+  background: #1e1e2f;
+  color: #f1f1f1;
+}
+
+.app {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.product-card {
+  background: white;
+  color: #333;
+}
+
+body.dark .product-card {
+  background: #242f38;
+  color: #070606;
+}
+
+body.dark p {
+  color: #f1f1f1;
+}
+body.dark h3 {
+  color: #f1f1f1;
+}
+
+
+.load-more-btn,
+.category-tag {
+  background: linear-gradient(45deg, #6C63FF, #A084E8);
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+body.light .toggle-btn {
+  border-color: #333;
+  color: #333;
+}
