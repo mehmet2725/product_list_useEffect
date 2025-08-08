@@ -1,12 +1,55 @@
-# React + Vite
+# 🛍️ Product List with useEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React'in `useEffect` hook'unu kullanarak basit bir ürün listeleme ve kategori filtreleme uygulaması sunar. Uygulamada ayrıca karanlık ve aydınlık tema desteği ile kullanıcı girişi/üye olma sayfaları örnekleri de mevcuttur.
 
-Currently, two official plugins are available:
+## 🚀 Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Ürünler `https://fakestoreapi.com/products` API'sinden çekilmektedir.
+- Kategori filtreleme özelliği mevcuttur.
+- Dark ve Light tema desteği vardır.
+- Login/Register arayüzü örnekleri hazırlanmıştır.
+- React fonksiyonel component yapısı ile geliştirilmiştir.
 
-## Expanding the ESLint configuration
+## 📦 Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6+)
+- HTML/CSS
+- Fakestore API
+
+## 📸 Ekran Görüntüleri
+
+### 🎨 Tema Görünümleri
+
+#### Light Home
+![Light Home](./assets/img/light_home.png)
+
+#### Dark Home
+![Dark Home](./assets/img/dark_home.png)
+
+### 🗂️ Kategori Filtreleme
+![Category Filter](./assets/img/categorys_filter.png)
+
+### 🔐 Kullanıcı Girişi
+#### Login Sayfası
+![Login](./assets/img/login.png)
+
+#### Register Sayfası
+![Register](./assets/img/register.png)
+
+## 🔧 Kurulum ve Çalıştırma
+
+Projeyi kendi bilgisayarınızda çalıştırmak için şu adımları izleyin:
+
+```bash
+# 1. Reposu klonlayın
+git clone https://github.com/mehmet2725/product_list_useEffect.git
+
+# 2. Klasöre geçin
+cd product_list_useEffect
+
+# 3. Bağımlılıkları yükleyin
+npm install
+
+# 4. Uygulamayı başlatın
+npm start
