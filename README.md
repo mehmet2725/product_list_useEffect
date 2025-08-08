@@ -16,27 +16,6 @@ Bu proje, React'in `useEffect` hook'unu kullanarak basit bir ürün listeleme ve
 - JavaScript (ES6+)
 - HTML/CSS
 - Fakestore API
-
-## 📸 Ekran Görüntüleri
-
-### 🎨 Tema Görünümleri
-
-#### Light Home
-![Light Home](./assets/img/light_home.png)
-
-#### Dark Home
-![Dark Home](./assets/img/dark_home.png)
-
-### 🗂️ Kategori Filtreleme
-![Category Filter](./assets/img/categorys_filter.png)
-
-### 🔐 Kullanıcı Girişi
-#### Login Sayfası
-![Login](./assets/img/login.png)
-
-#### Register Sayfası
-![Register](./assets/img/register.png)
-
 ## 🔧 Kurulum ve Çalıştırma
 
 Projeyi kendi bilgisayarınızda çalıştırmak için şu adımları izleyin:
